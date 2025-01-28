@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal DF-E</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            
+        }
+
+        header {
+            background: #1530c6;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.663);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 13px 20px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 500px 20px 50px; /* Added padding to account for fixed header */
+            background-image: url(imagem-fundo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+           color: #f4f4f4;
+           
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #f4f4f4;
+        }
+
+        section {
+            padding: 80px 20px; /* Adjusted padding for spacing */
+            margin-top: 20px;
+           text-align: center;
+        }
+
+        section:nth-child(even) {
+            background: #fcc015;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        body > section:first-of-type {
+            margin-top: 80px; /* Ensure first section is visible below fixed header */
+        }
+        .section-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 10000px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: grid;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div> <img src="logo-branca-ias.png" alt="logo"></div>
+            <div>
+                <a href="/contato.html">Contato</a>
+                <a href="#cadastro">Cadastre-se</a>
+                <a href="/principal.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+     
+        
+    <div class="hero" >
+       
+        <h1>Bem-vindo ao Portal DF-E</h1>
+        
+        <p>Descubra mais sobre o que temos a oferecer.</p>
+    
+    </div>
+
+
+
+    
+      
+    <section id="servicos">
+        <h2>Sobre Nós</h2>
+        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades.</p>
+   
+            <section class="section-cards">
+            
+            <div class="card">
+                <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+                <h3>Título 1</h3>
+                <p>Descrição breve do card 1.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+                <h3>Título 2</h3>
+                <p>Descrição breve do card 2.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+                <h3>Título 3</h3>
+                <p>Descrição breve do card 3.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+                <h3>Título 4</h3>
+                <p>Descrição breve do card 4.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+        </section>
+        </section>
+    
+</section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações.</p>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastre-se</h2>
+        <p>Junte-se a nós e aproveite os benefícios exclusivos.</p>
+    </section>
+
+    <section id="login">
+        <h2>Conecte-se</h2>
+        <p>Acesse sua conta e gerencie seus dados.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

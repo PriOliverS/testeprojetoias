@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div> <img src="logo-branca-ias.png" alt="logo"></div>
+            <div>
+                <a href="/contato.html">Contato</a>
+                <a href="#cadastro">Cadastre-se</a>
+                <a href="/principal.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="hero" >
+       
+        <h1>Bem-vindo ao Portal DF-E</h1>
+        
+        <p>Descubra mais sobre o que temos a oferecer.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Contato</h1>
+        <form action="enviar_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

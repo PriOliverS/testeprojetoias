@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            
+        }
+
+        .menu {
+            width: 100px;
+            background-color: #0056b3;
+            height: 100vh;
+            padding: 50px 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            margin: 10px 0;
+            margin-top: 60%;
+            padding: 8px;
+            border-radius: 8px;
+            display: grid;
+            align-items: start;
+            justify-content: space-evenly;
+            transition: background-color 0.3s;
+            height: 1.5cm;
+        }
+
+        .menu a:hover {
+            background-color: #086dd1;
+        }
+
+        .menu a i {
+            margin-right: 1px;
+            font-size: 20px;
+            display: grid;
+    
+            justify-content: center;
+          
+        }
+
+        .content {
+            flex: 1;
+            padding: 100px;
+            
+        }
+
+  
+      
+
+       
+
+        header {
+            background: #FCC015;
+            color: #fff;
+            padding: 1px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.663);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 13px 20px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+       
+
+         section {
+            padding: 80px 20px; /* Adjusted padding for spacing */
+            margin-top: 20px;
+           text-align: center;
+        }
+
+        section:nth-child(even) {
+            background: #fcc015;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+           
+           
+        }
+        
+
+        footer p {
+            margin: 1px;
+            
+        }
+        body > section:first-of-type {
+            margin-top: 80px; /* Ensure first section is visible below fixed header */
+        }
+        .sair a:hover {
+            background-color: #086dd1;
+            border-radius: 2px;
+
+        }
+
+    </style>
+     <header>
+        <nav>
+            <div> <img src="logo-branca-ias.png" alt="logo"></div>
+            <div class="sair">
+                
+                <a href="/index.html">Sair</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Link para o Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="#home">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+        <a href="#contadores">
+            <i class="fas fa-calculator"></i>
+            Contadores
+        </a>
+        <a href="#clientes">
+            <i class="fas fa-user-tie"></i>
+            Clientes
+        </a>
+        <a href="#usuarios">
+            <i class="fas fa-users"></i>
+            Usuários
+        </a>
+    </div>
+    <div class="content">
+        <h1>Bem-vindo!</h1>
+        <p>Escolha uma opção no menu para começar.</p>
+    </div>
+   
+    <footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .section-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+            <h3>Título 1</h3>
+            <p>Descrição breve do card 1.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+            <h3>Título 2</h3>
+            <p>Descrição breve do card 2.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+            <h3>Título 3</h3>
+            <p>Descrição breve do card 3.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+            <h3>Título 4</h3>
+            <p>Descrição breve do card 4.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220x140" alt="Imagem do Card">
+            <h3>Título 5</h3>
+            <p>Descrição breve do card 5.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </section>
+</body>
+</html>
